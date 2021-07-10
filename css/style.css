@@ -5,20 +5,20 @@
 
   transition: background-color 500ms linear;
 
-  animation: anim 3s linear 1 forwards;
+  animation: anim 3s linear alternate infinite;
 }
 
 @keyframes anim {
   0% {
     transform: translate(0);
   }
-  33% {
+  25% {
     transform: translateX(100px);
   }
-  66% {
+  50% {
     transform: translate(100px, 100%);
   }
-  100% {
+  75%, 100% {
     transform: translate(100px, 100%) scale(2) rotate(145deg);
   }
 }
